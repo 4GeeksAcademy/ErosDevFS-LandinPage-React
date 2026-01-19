@@ -2,25 +2,37 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-warning text-white">
-            <div className="container-fluid">
-                <div className="d-flex align-items-center justify-content-end">
-                    <a className="navbar-brand mx-auto" href="#">Start Bootstrap</a>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white sticky-top">
+            <div className="container col-md-8">
+                
+                    <a className="navbar-brand" href="#">Start Bootstrap</a>
 
-                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul className="navbar-nav">
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Features</a>
+                                <a className="nav-link" href="#">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
+                                <a className="nav-link" href="#">Services</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
         </nav>
     );
